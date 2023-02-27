@@ -11,21 +11,21 @@ public class PrimeNumber {
         System.out.print("Enter the integer number : ");
         int num = input.nextInt(); //Declare the integer entered by user
         int i = 2; // Declare the variable and initiate value for prime check
-        boolean flag = false;
+        boolean flag = true;
         if (num == 0 || num == 1) {
             // Zero and one is not a prime number
-            System.out.println(num + " is a not prime number ");
+            flag = false;
         } else {
-            while (i <= num / 2 ) {
+            while (i < num / 2 ) {
                 if (num % i == 0) {
                     // condition check for num is prime or not
-                    flag = true; //boolean
+                    flag = false; //boolean
                     break;
                 }
                 i ++;
             }
         }
-        if (!flag) {
+        if (flag) {
             System.out.println(num + " is a prime number");
         } else {
             System.out.println(num + " is  not a prime number ");
