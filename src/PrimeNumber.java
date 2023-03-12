@@ -20,7 +20,7 @@ public class PrimeNumber {
                 if (num % i == 0) {
                     // condition check for num is prime or not
                     flag = false; //boolean
-                    //break;
+                    break;
                 }
                 i ++;
             }
