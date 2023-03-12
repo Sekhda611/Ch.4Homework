@@ -16,19 +16,19 @@ public class PrimeNumber {
             // Zero and one is not a prime number
             flag = false;
         } else {
-            while (i < num / 2 ) {
+            while (i <= num / 2 ) {
                 if (num % i == 0) {
                     // condition check for num is prime or not
                     flag = false; //boolean
-                    break;
+                    //break;
                 }
                 i ++;
             }
         }
         if (flag) {
-            System.out.println(num + " is a prime number");
+            System.out.println(num + " is a prime number ");
         } else {
-            System.out.println(num + " is  not a prime number ");
+            System.out.println(num + " is not a prime number ");
         }
     }
 }

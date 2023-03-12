@@ -18,7 +18,7 @@ public class SumOfDigits {
 
         }
 
-        System.out.println("Sum of the digits is:  "  + sum);
+        System.out.println("Sum of the digits is:  "  + sum); //Output of the Sum of digits
 
     }
 }
